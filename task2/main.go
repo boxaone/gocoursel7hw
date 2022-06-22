@@ -19,15 +19,15 @@ func main() {
 		err    error
 	)
 
-	for _, nums := range strings.Split(input, " ") {
+	for ind, nums := range strings.Split(input, " ") {
 		numi, err = strconv.Atoi(nums)
 
 		if err == nil {
 			num = (int32(numi))
-			if num > max {
+			if num > max || ind==0 {
 				max = num
 			}
-			if num < min {
+			if num < min || ind==0 {
 				min = num
 			}
 
