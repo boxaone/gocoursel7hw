@@ -1,3 +1,3 @@
-# gocoursel7hw
+# Домашне завдання до лекції №7
 
 Main branch
